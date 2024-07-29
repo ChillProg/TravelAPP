@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+span, div {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    gap: 50px;
+}
+
+.phone {
+    height: 568px;
+    width: 280px;
+    border-radius: 30px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+}
+
+.loading .bgImage {
+    width: 100%;
+    height: 80%;
+}
+
+.loading .bottomContainer{
+    position: absolute;
+    bottom: 0px; 
+}
+
+.loading .discoverSpan{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 30%;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.loading .guideSpan {
+    display: inline-block;
+    padding-left: 10px;
+    color: white;
+    opacity: 0.7;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.loading .signFormContainer{
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loading .crateAccountContainer{
+    background-color: #e1793c;
+    margin: 20px 30px 12px 30px;
+    padding: 10px 0px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.loading .material-symbols-outlined{
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.loading .crateAccountContainer:hover {
+    background-color: #a85f34;
+}
+
+.loading .alreadyAccount{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.loading .alreadyAccount:hover {
+    opacity: 0.5;
+}
+
+.loading .OrContainer {
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.loading .OrContainer::before,
+.loading .OrContainer::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #00000027;
+}
+
+.loading .OrContainer span {
+    padding: 0 8px;
+    font-size: 14px;
+    opacity: 0.5;
+    cursor: default
+}
+
+.loading  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.icon-container i {
+    font-size: 22px;
+    padding: 5px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+/****/
+
+.navigationContainer{
+    bottom: 0px;
+    position: absolute;
+    width: calc(100% - 16px);
+    height: 60px;
+    border-top: solid 1px #5555551a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+.navigationContainer .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 9px;
+    color: #55555559;
+    cursor: pointer;
+}
+
+.navigationContainer .nav-item .material-symbols-outlined {
+    font-size: 22px;
+}
+
+.navigationContainer .active{
+    color: #eb58049a;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.headerContainer .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.headerContainer .icon span {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0px 9px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.headerContainer img {
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0px 9px rgba(0, 0, 0, 0.15);
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.headerContainer .title {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.centerContainer{
+    width: calc(100% - 30px);
+    height: 255px;
+    margin: 12px 15px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.centerContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.centerContainer .pyramidTag{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 8px;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+.centerContainer .pyramidTitle {
+    position: absolute;
+    left: 12px;
+    bottom: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.centerContainer .arrow{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.categoryContainer{
+    margin-top: 20px;
+    width: 100%;
+    height: 155px;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.categoryContainer .sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 15px;
+    margin:  15px 15px 0px 15px;
+}
+
+.categoryContainer .sectionHeader .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.747);
+}
+.categoryContainer .sectionHeader .seeAll{
+    font-size: 10px;
+    color: #e1783cd7;
+    cursor: pointer;
+}
+
+.categoryContainer .sectionHeader .arrow {
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #e1793c;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categoryContainer .categoryList{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+    gap: 8px;
+}
+
+.categoryContainer .categoryList .item{
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.categoryContainer .categoryList .item  img{
+    height: 65px;
+    width: 70px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.categoryContainer .categoryList .item span {
+   font-size: 10px;
+   color: #303030b2;
+   cursor: pointer;
+}
+
+.favorite{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
